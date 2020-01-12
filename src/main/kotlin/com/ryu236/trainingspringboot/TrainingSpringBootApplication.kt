@@ -1,5 +1,6 @@
 package com.ryu236.trainingspringboot
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class TrainingSpringBootApplication
 
 fun main(args: Array<String>) {
-	runApplication<TrainingSpringBootApplication>(*args)
+	runApplication<TrainingSpringBootApplication>(*args) {
+		setBannerMode(Banner.Mode.OFF)
+	}
 }
